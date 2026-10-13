@@ -1,0 +1,145 @@
+body {
+    background-color: hsl(0, 0%, 98%);       /* ძალიან ღია ნაცრისფერი/თეთრი ფონი */
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;      /* სტანდარტული შრიფტი */
+    color: hsl(0, 0%, 41%);                   /* ზოგადი ნაცრისფერი ტექსტი */
+}
+
+/* მთავარი ნავიგაციის მენიუ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 60px;                                /* ლოგოსა და მენიუს შორის დაშორება */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(0, 0%, 8%);                    /* მუქი ფერის ლოგო */
+}
+
+/* მენიუს ლინკები */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: hsl(0, 0%, 8%);                    /* ჰოვერზე იმუქრება */
+}
+
+/* მარჯვენა მხარე (Login / Register) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register-btn {
+    background: none;
+    border: 1.5px solid hsl(0, 0%, 41%);
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    border-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+}
+
+/* მთავარი Hero სექცია (გვერდიგვერდ განლაგება) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: hsl(0, 0%, 8%);
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Learn More ღილაკი */
+.learn-more-btn {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 8%);
+    outline: 1.5px solid hsl(0, 0%, 8%);
+}
+
+/* Hero სურათი */
+.hero-image img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+}
+
+/* ბრენდების ლოგოების ფუტერი */
+.clients-logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.clients-logo img {
+    height: 20px;
+}
